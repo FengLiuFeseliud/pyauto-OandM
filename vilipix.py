@@ -31,11 +31,11 @@ with mysql("api", dbname) as sql:
         add_table_comm = ADD_TABLE % (dbname, dtime)
         try:
             sql.exec(add_table_comm)
+            table = "%s" % (dtime)
+            log.write("添加数据表: %s" % table)
         except pymysql.err.OperationalError:
             pass
 
-        table = "%s" % (dtime)
-        log.write("添加数据表: %s" % table)
         add_data, add_id = [], []
         for img in data:
             in_img = sql.read("img_id", "id = %s" % img["id"])
