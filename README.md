@@ -15,8 +15,8 @@
 0 0 * * * python3 /web/py/vilipix.py
 # 每小时获取一次指定地区天气保存在 wthrcdn.txt (这里的数据我是准备放在主页的)
 0 */1 * * * python3 /web/py/wthrcdn.py
-# 每小时更新一次 github hosts 保存至 hosts 文件
-0 */1 * * * python3 /web/py/autohosts.py
+# 每小时10分更新一次 github hosts 保存至 hosts 文件
+10 */1 * * * python3 /web/py/autohosts.py
 # 每天3点30分自动备份指定目录, mysql数据库
 30 3 * * * python3 /web/py/autobackup.py
 ```
