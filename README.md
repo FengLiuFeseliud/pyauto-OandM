@@ -2,7 +2,7 @@
 
 运行于 sakuratools.top 的 python 自动化运维脚本
 
-仅在本机运行测试 （环境：Linux debain 11，python 3.9）
+仅在本机运行测试 （环境：Linux Debian 11，python 3.9）
 
 全部脚本需 root 运行
 
